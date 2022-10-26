@@ -1,0 +1,11 @@
+{% extends 'base.html' %}
+{% block content %}
+
+    <div>
+        {% for purchase in purchases %}
+            <p>{{purchase.name}}-{{purchase.age}}-{{purchase.item_id}}-{{purchase.date_purchase}}</p>
+        {% endfor %}
+    </div>
+
+{% endblock %}
+f
